@@ -34,7 +34,13 @@
 }
 
 .card {
-  padding: 2em;
+  border: 1px solid #d9d9d9;
+  padding: 1em;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .read-the-docs {
@@ -43,4 +49,41 @@
 .btn-group button{
   margin: 0px 10px;
   border: 1px solid #d9d9d9;
+}
+.btn-delete{
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid red;
+  padding: 6px 12px;
+}
+.btn-delete-all{
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 6px 12px;
+}
+.btn-delete-all.reset{
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  padding: 6px 12px;
+}
+.users ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.users ul li{
+  list-style-type: none;
+  margin-right: 16px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 16px;
+  padding: 5px;
+  border-radius: 12px;
+}
+.users ul li img{
+  width: 180px;
+  height: 180px;
+ border-radius: 8px
 }
