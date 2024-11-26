@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function GitHubUser() {
   const [users, setUsers] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   async function fetchUsers() {
     try {
       const response = await fetch("https://api.github.com/users");
@@ -10,14 +10,21 @@ export default function GitHubUser() {
       const result = await response.json();
       console.log(result);
       setUsers(result);
-    } catch (error) {}
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+    }
   }
-  useEffect(()=>{fetchUsers()}, []);
+  useEffect(()=>{
+    setTimeout(()=>{
+      fetchUsers()
+    }, 3000);
+  }, []);
 //   fetchUsers();
   return (
     <>
       <h2>GitHub Users</h2>
-      <div className="users">
+      {loading ? (<h2>Loading...</h2>) : ( <div className="users">
         <ul>
             {users.map((user)=>{
                 const {id, avatar_url, login, html_url} = user;
@@ -30,7 +37,8 @@ export default function GitHubUser() {
                 );
             })}
         </ul>
-      </div>
+      </div>)}
+     
     </>
   );
 }
