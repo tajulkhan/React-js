@@ -8,9 +8,11 @@ import UseEffectExample from "./components/effect/useEffectExample";
 import GitHubUser from "./components/effect/GitHubUser";
 import Timer from "./components/effect/timer.jsx";
 import Home from "./components/home/home.jsx";
+import Login from "./components/login/login.jsx";
 function App() {
   return (
     <>
+     <Login/>
       <h3>Card logic use to useState & useEffect hooks</h3>
       <hr />
       <Home/>

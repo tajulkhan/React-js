@@ -102,3 +102,7 @@
   width: 400px;
   margin: 0 auto 20px;
 }
+.error{
+  color: red;
+  font-size: 14px;
+}
