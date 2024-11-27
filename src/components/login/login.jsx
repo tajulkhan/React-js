@@ -35,6 +35,7 @@ export default function Login() {
     <div className="login-card">
       <h3>Log in</h3>
       {error && <div className="error">{error}</div>}
+       {/* Un Controlled inputs */}
       <form onSubmit={handleSubmit}>
         <div className="field-row">
           <label htmlFor="email">Email</label> <br />

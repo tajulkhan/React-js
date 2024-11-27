@@ -9,9 +9,12 @@ import GitHubUser from "./components/effect/GitHubUser";
 import Timer from "./components/effect/timer.jsx";
 import Home from "./components/home/home.jsx";
 import Login from "./components/login/login.jsx";
+import Student from "./components/context/withContext/student.jsx"
 function App() {
   return (
     <>
+      <Student/>
+     <hr />
      <Login/>
       <h3>Card logic use to useState & useEffect hooks</h3>
       <hr />
