@@ -3,25 +3,31 @@ import Profile from "./components/profile";
 import PackingList from "./components/conditional-rendering.jsx";
 import RenderingList from "./components/rendering-lists.jsx";
 import Counter from "./components/counter.jsx";
-import Card from "./components/state/card.jsx";
 import UseEffectExample from "./components/effect/useEffectExample";
 import GitHubUser from "./components/effect/GitHubUser";
 import Timer from "./components/effect/timer.jsx";
 import Home from "./components/home/home.jsx";
 import Login from "./components/login/login.jsx";
-import Student from "./components/context/withContext/student.jsx"
+import Student from "./components/context/withContext/student.jsx";
+import { TaskProvider } from "./components/reducer/taskapp";
+import TaskList from "./components/reducer/tasklist";
 function App() {
   return (
     <>
-      <Student/>
-     <hr />
-     <Login/>
+      <h3>Task Management app use in useReducer hooks</h3>
+      <TaskProvider>
+        <TaskList />
+      </TaskProvider>
+      <hr />
+      <Student />
+      <hr />
+      <Login />
       <h3>Card logic use to useState & useEffect hooks</h3>
       <hr />
-      <Home/>
+      <Home />
       <hr />
       <h3>Timer logic use to useState & useEffect hooks</h3>
-      <Timer/>
+      <Timer />
       <hr />
       <h3>Api fetch logic use to useState & useEffect hooks & async</h3>
       <GitHubUser />
