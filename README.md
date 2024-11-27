@@ -20,10 +20,18 @@ To set up and run the project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-cd <project-folder>
-npm install
-npm start
 
-### Explanation:
-- `[Live Demo](https://react-js-taj.netlify.app/)`: This Markdown syntax creates a hyperlink. The text **Live Demo** will appear as a clickable link, and clicking it will take the user to `https://react-js-taj.netlify.app/`.
-- You can replace **Live Demo** with any text you'd like to display as the link.
+2. **Navigate to the project directory**:
+   ```bash
+   cd <project-folder> 
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+
+## Thankyou 
+Check out likedin: [Tajulkhan B.S](https://www.linkedin.com/in/tajul-khan-b-s-513758220/)
