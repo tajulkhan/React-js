@@ -13,7 +13,7 @@ export default function NameFilterComponent() {
 //   );
   return (
     <div>
-      <h2>Name Filter Component Basic filter</h2>
+      <h2>Name Filter Component Basic filter & custom hooks</h2>
       <input
         type="text"
         value={searchTerm}
