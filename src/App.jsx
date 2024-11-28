@@ -11,9 +11,24 @@ import Login from "./components/login/login.jsx";
 import Student from "./components/context/withContext/student.jsx";
 import { TaskProvider } from "./components/reducer/taskapp";
 import TaskList from "./components/reducer/tasklist";
+import ButtonOnClick from "./components/callback/buttonClickCounter.jsx";
+import SortingMemo from "./components/memo/sortingMemo.jsx";
+import WithoutTransition from "./components/transition/withoutTransition.jsx";
+import LargeListFilter from "./components/transition/largeListFilter.jsx";
+import NameFilterComponent from "./components/customHooks/nameFilterComponent.jsx";
 function App() {
   return (
     <>
+      <NameFilterComponent />
+      <hr />
+      <LargeListFilter />
+      <hr />
+      <WithoutTransition />
+      <hr />
+      <SortingMemo />
+      <hr />
+      <ButtonOnClick />
+      <hr />
       <h3>Task Management app use in useReducer hooks</h3>
       <TaskProvider>
         <TaskList />
